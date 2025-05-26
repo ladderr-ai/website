@@ -1,5 +1,6 @@
 import React from 'react';
 import { Rocket } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -11,9 +12,9 @@ export default function Footer() {
             <span className="text-[#1F2A44] text-xl font-semibold">Ladderr</span>
           </div>
           <div className="flex space-x-6">
-            <a href="/terms" className="text-[#2E2E33] hover:text-[#1F2A44]">Terms</a>
-            <a href="/privacy" className="text-[#2E2E33] hover:text-[#1F2A44]">Privacy</a>
-            <a href="/contact" className="text-[#2E2E33] hover:text-[#1F2A44]">Contact</a>
+            <Link to="/terms" className="text-[#2E2E33] hover:text-[#1F2A44]">Terms</Link>
+            <Link to="/privacy" className="text-[#2E2E33] hover:text-[#1F2A44]">Privacy</Link>
+            <Link to="/contact" className="text-[#2E2E33] hover:text-[#1F2A44]">Contact</Link>
           </div>
           <p className="text-[#2E2E33]">Made with ❤️ by Ladderr</p>
         </div>

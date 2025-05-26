@@ -1,5 +1,6 @@
 import React from 'react';
 import { Rocket } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Navigation() {
   return (
@@ -7,10 +8,10 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <a href="/" className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-2">
               <Rocket className="h-8 w-8 text-[#FFB100]" />
               <span className="text-[#F9FAFC] text-xl font-semibold">Ladderr</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
